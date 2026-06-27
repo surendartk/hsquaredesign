@@ -10,6 +10,7 @@ import Footer from "./components/Footer/Footer";
 
 import "./App.css";
 import Contact from "./components/Contact/Contact";
+import WhatsappFloat from "./components/WhatsappFloat/WhatsappFloat";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
+      <WhatsappFloat />
     </>
   );
 }

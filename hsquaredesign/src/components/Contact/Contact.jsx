@@ -1,7 +1,52 @@
+import { useState } from "react";
 import "./Contact.css";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    project: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const message = `
+🏗️ *New Project Enquiry*
+
+👤 Name: ${formData.name}
+
+📧 Email: ${formData.email}
+
+📞 Phone: ${formData.phone}
+
+📝 Project Details:
+${formData.project}
+`;
+
+    const whatsappUrl = `https://wa.me/918015871882?text=${encodeURIComponent(
+      message,
+    )}`;
+
+    window.open(whatsappUrl, "_blank");
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      project: "",
+    });
+  };
+
   return (
     <section className="contact" id="contact">
       <div className="container">
@@ -24,7 +69,7 @@ function Contact() {
               <FaPhoneAlt />
               <div>
                 <h4>Phone</h4>
-                <p>+91 xxxxxxxxxx</p>
+                <p>+91 8015871882</p>
               </div>
             </div>
 
@@ -40,24 +85,49 @@ function Contact() {
               <FaMapMarkerAlt />
               <div>
                 <h4>Office</h4>
-                <p>Chennai, India</p>
+                <p>Chennai, Tamil Nadu, India</p>
               </div>
             </div>
           </div>
 
-          <form className="contact-form">
-            <input type="text" placeholder="Your Name" />
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
 
-            <input type="email" placeholder="Email Address" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
 
-            <input type="text" placeholder="Phone Number" />
+            <input
+              type="text"
+              name="phone"
+              placeholder="Phone Number"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />
 
             <textarea
               rows="6"
+              name="project"
               placeholder="Tell us about your project"
+              value={formData.project}
+              onChange={handleChange}
+              required
             ></textarea>
 
-            <button type="submit">SEND MESSAGE</button>
+            <button type="submit">SEND ON WHATSAPP</button>
           </form>
         </div>
       </div>

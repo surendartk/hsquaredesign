@@ -16,7 +16,7 @@ function Footer() {
         <div className="footer-top">
           {/* Logo */}
           <div className="footer-logo">
-            <h2>H² DESIGN</h2>
+            <h2>H SQUARE DESIGN</h2>
 
             <p>
               Building premium residential, commercial and industrial spaces
@@ -52,7 +52,7 @@ function Footer() {
 
               <p>
                 <FaPhoneAlt />
-                <span>+91 xxxxxxxxxx</span>
+                <span>+91 8015871882</span>
               </p>
 
               <p>
