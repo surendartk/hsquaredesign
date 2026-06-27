@@ -1,0 +1,76 @@
+.why {
+  background: #111;
+  color: #fff;
+  padding: 120px 8%;
+}
+
+.why .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.light {
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  letter-spacing: 4px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.why h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 70px;
+  max-width: 700px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.stat-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 45px 20px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.stat-card:hover {
+  background: #fff;
+  color: #111;
+  transform: translateY(-6px);
+}
+
+.stat-card h3 {
+  font-size: 56px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.stat-card p {
+  color: inherit;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 992px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card h3 {
+    font-size: 42px;
+  }
+}

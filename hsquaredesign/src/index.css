@@ -1,0 +1,111 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
+
+:root {
+  --primary: #111111;
+  --secondary: #222222;
+  --gray: #666666;
+  --light: #f7f7f7;
+  --border: #e4e4e4;
+  --white: #ffffff;
+
+  --container: 1280px;
+
+  --transition: 0.35s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+
+  color: var(--primary);
+
+  background: var(--white);
+
+  overflow-x: hidden;
+
+  line-height: 1.7;
+}
+
+img {
+  width: 100%;
+
+  display: block;
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: var(--container);
+
+  margin: auto;
+
+  padding: 0 20px;
+}
+
+section {
+  padding: 120px 0;
+}
+
+.section-title {
+  display: inline-block;
+
+  letter-spacing: 4px;
+
+  font-size: 13px;
+
+  text-transform: uppercase;
+
+  color: #777;
+
+  margin-bottom: 18px;
+}
+
+.section-heading {
+  font-family: "Playfair Display", serif;
+
+  font-size: 52px;
+
+  line-height: 1.2;
+
+  margin-bottom: 22px;
+}
+
+.section-text {
+  color: var(--gray);
+
+  max-width: 650px;
+}
+
+@media (max-width: 992px) {
+  .section-heading {
+    font-size: 40px;
+  }
+
+  section {
+    padding: 90px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 34px;
+  }
+}
