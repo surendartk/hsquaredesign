@@ -90,7 +90,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 H SQUARE DESIGN. All Rights Reserved.</p>
+          <p>© 2026 HSQUAREDESIGN. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
