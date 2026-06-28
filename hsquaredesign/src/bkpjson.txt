@@ -4,3 +4,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+
+
+  replace in json
+  
