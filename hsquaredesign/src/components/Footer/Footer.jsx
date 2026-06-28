@@ -16,7 +16,7 @@ function Footer() {
         <div className="footer-top">
           {/* Logo */}
           <div className="footer-logo">
-            <h2>H SQUARE2222 DESIGN</h2>
+            <h2>H SQUARE DESIGN</h2>
 
             <p>
               Building premium residential, commercial and industrial spaces
@@ -90,7 +90,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2026 HSQUAREDESIGN. All Rights Reserved.</p>
+          <p>© 2026 H SQUARE DESIGN. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
