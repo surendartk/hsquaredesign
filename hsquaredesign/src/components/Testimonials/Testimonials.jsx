@@ -3,19 +3,19 @@ import "./Testimonials.css";
 function Testimonials() {
   const reviews = [
     {
-      name: "John Anderson",
+      name: "Karthikeyan N",
       role: "Residential Client",
       text: "Exceptional craftsmanship and attention to detail. The project was completed on schedule and exceeded our expectations.",
     },
 
     {
-      name: "Michael Carter",
+      name: "Praveen Kumar",
       role: "Commercial Client",
       text: "Professional team, transparent communication, and outstanding quality from start to finish.",
     },
 
     {
-      name: "Sarah Wilson",
+      name: "Melvin",
       role: "Villa Owner",
       text: "A reliable construction partner who truly understands luxury design and quality execution.",
     },

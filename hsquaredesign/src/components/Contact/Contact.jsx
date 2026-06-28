@@ -77,7 +77,7 @@ ${formData.project}
               <FaEnvelope />
               <div>
                 <h4>Email</h4>
-                <p>info@hsquaredesign.com</p>
+                <p>salmanomar.nmh@gmail.com</p>
               </div>
             </div>
 
